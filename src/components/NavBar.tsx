@@ -17,11 +17,61 @@ export default function NavBar() {
       <nav className={`${quantico.className} flex flex-1 flex-row`}>
         <ul className="flex space-x-4">
           <li className="text-justify capitalize group">
-            <Link href={routesLinks.project}>
-              <span className="group-hover:hidden">Projetos</span>
-              <span className="group-hover:inline hidden text-green-300">
-                {' '}
-                &lt; Projetos /&gt;
+            <Link href={routesLinks.project} className="relative">
+              <span className="group text-green-300">
+                <strong className="group-hover:inline hidden">&lt; </strong>
+                Projetos
+                <strong className="group-hover:inline hidden"> /&gt;</strong>
+              </span>
+            </Link>
+          </li>
+
+          <li className="text-justify capitalize group">
+            <Link href={routesLinks.project} className="relative">
+              <span className="group text-green-300">
+                <strong className="group-hover:inline hidden">&lt; </strong>
+                Projetos
+                <strong className="group-hover:inline hidden"> /&gt;</strong>
+              </span>
+            </Link>
+          </li>
+
+          <li className="text-justify capitalize group">
+            <Link href={routesLinks.project} className="relative">
+              <span className="group text-green-300">
+                <strong className="group-hover:inline hidden">&lt; </strong>
+                Projetos
+                <strong className="group-hover:inline hidden"> /&gt;</strong>
+              </span>
+            </Link>
+          </li>
+
+          <li className="text-justify capitalize group">
+            <Link href={routesLinks.project} className="relative">
+              <span className="group text-green-300">
+                <strong className="group-hover:inline hidden">&lt; </strong>
+                Projetos
+                <strong className="group-hover:inline hidden"> /&gt;</strong>
+              </span>
+            </Link>
+          </li>
+
+          <li className="text-justify capitalize group">
+            <Link href={routesLinks.project} className="relative">
+              <span className="group text-green-300">
+                <strong className="group-hover:inline hidden">&lt; </strong>
+                Projetos
+                <strong className="group-hover:inline hidden"> /&gt;</strong>
+              </span>
+            </Link>
+          </li>
+
+          <li className="text-justify capitalize group">
+            <Link href={routesLinks.project} className="relative">
+              <span className="group text-green-300">
+                <strong className="group-hover:inline hidden">&lt; </strong>
+                Projetos
+                <strong className="group-hover:inline hidden"> /&gt;</strong>
               </span>
             </Link>
           </li>
