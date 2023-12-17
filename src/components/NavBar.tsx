@@ -3,10 +3,13 @@ import { routesLinks } from '@/enums/route-enums'
 import { Quantico } from 'next/font/google'
 import Link from 'next/link'
 
+import world from '../assets/world.json'
+
 import {
   NavigationMenu,
   NavigationMenuItem,
 } from '@/components/ui/navigation-menu'
+import { Lordicon } from './Lordicon'
 
 const quantico = Quantico({
   subsets: ['latin'],
@@ -18,10 +21,10 @@ const routesLinksArray = Object.values(routesLinks)
 export function NavBar() {
   return (
     <div
-      className={`${quantico.className} flex flex-1 mx-14 items-center justify-between space-x-16 m-7 box-border`}
+      className={`${quantico.className} flex mx-14 items-center justify-between space-x-16 m-7 box-border`}
     >
-      <Link href={routesLinks.home} className="flex items-centerh-5 w-4">
-        <p className="ml-20 text-3xl font-bold">4</p>
+      <Link href={routesLinks.home} className="flex items-center h-5 w-4">
+        <p className="text-3xl font-bold">4</p>
       </Link>
 
       <NavigationMenu className="flex justify-between max-w-lg">
@@ -34,7 +37,7 @@ export function NavBar() {
               <strong className="group-hover:text-green-300 text-transparent">
                 &lt;{' '}
               </strong>
-              <Link href={route} legacyBehavior passHref className="">
+              <Link href={route} legacyBehavior passHref>
                 {route}
               </Link>
               <strong className="group-hover:text-green-300 text-transparent">
@@ -46,9 +49,11 @@ export function NavBar() {
         ))}
       </NavigationMenu>
 
-      <Link href={routesLinks.home} className="h-5 w-4">
-        <p className="text-3xl font-bold">4</p>
-      </Link>
+      <div className="">
+        <Link href={routesLinks.home}>
+          <Lordicon icon={world} />
+        </Link>
+      </div>
 
       {/* <ul className="flex space-x-4">
         <li className="flex flex-1 w-full max-h-screen">
