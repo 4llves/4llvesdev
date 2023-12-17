@@ -6,8 +6,10 @@ import { Player } from '@lordicon/react'
 const avatar = require('../../assets/avatar.json')
 
 export default function about() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [isHovered, setIsHovered] = useState(false)
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const playerRef = useRef<Player>(null)
 
   // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -19,7 +21,7 @@ export default function about() {
 
   return (
     <div
-      className="flex w-full max-h-screen bg-slate-500"
+      className="flex w-full h-[calc(100vh-100px)] bg-slate-500"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

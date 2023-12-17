@@ -3,7 +3,7 @@ import { Player } from '@lordicon/react'
 
 import ICON from '../assets/lock.json'
 
-export default function PlayOnce() {
+export function PlayOnce() {
   const playerRef = useRef<Player>(null)
 
   useEffect(() => {
