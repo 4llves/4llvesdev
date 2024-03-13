@@ -33,14 +33,14 @@ export function NavBar() {
             key={i}
             className="flex relative capitalize justify-between"
           >
-            <span className="group text-green-300">
-              <strong className="group-hover:text-green-300 text-transparent">
+            <span className="group text-green-titles">
+              <strong className="group-hover:text-green-titles text-transparent">
                 &lt;{' '}
               </strong>
               <Link href={route} legacyBehavior passHref>
                 {route}
               </Link>
-              <strong className="group-hover:text-green-300 text-transparent">
+              <strong className="group-hover:text-green-titles text-transparent">
                 {' '}
                 /&gt;
               </strong>
@@ -51,23 +51,9 @@ export function NavBar() {
 
       <div className="">
         <Link href={routesLinks.home}>
-          <Lordicon icon={world} />
+          <Lordicon icon={world} size={32} />
         </Link>
       </div>
-
-      {/* <ul className="flex space-x-4">
-        <li className="flex flex-1 w-full max-h-screen">
-          {routesLinksArray.slice(1).map((route, i) => (
-            <Link key={i} href={route} className="relative">
-              <span className="group text-green-300 px-5">
-                <strong className="group-hover:inline hidden">&lt; </strong>
-                {route.split('/')}
-                <strong className="group-hover:inline hidden"> /&gt;</strong>
-              </span>
-            </Link>
-          ))}
-        </li>
-      </ul> */}
     </div>
   )
 }
