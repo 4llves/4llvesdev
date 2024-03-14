@@ -1,3 +1,4 @@
+'use client'
 import { Quantico } from 'next/font/google'
 import Image from 'next/image'
 
@@ -11,7 +12,7 @@ export default function Home() {
     <div className="flex items-center justify-center gap-10 px-10">
       <section className="flex flex-col gap-y-6">
         <h1
-          className={`${quantico.className} text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient`}
+          className={`${quantico.className} text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.slate.200),theme(colors.red.600),theme(colors.rose.600),theme(colors.zinc.600),theme(colors.slate.100),theme(colors.red.600),theme(colors.rose.600))] bg-[length:200%_auto] animate-gradient`}
         >
           Alves Jhonata
         </h1>
