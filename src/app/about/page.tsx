@@ -3,9 +3,10 @@ import { Lordicon } from '@/components/Lordicon'
 import { Player } from '@lordicon/react'
 import { useEffect, useRef } from 'react'
 
-import avatar from '../../assets/avatar.json'
 import Image from 'next/image'
+import avatar from '../../assets/avatar.json'
 
+import Headers from '@/components/Headers'
 import Alvesimg from '../../assets/4llvescontrastr.jpg'
 
 export default function About() {
@@ -17,13 +18,17 @@ export default function About() {
 
   return (
     <div className="px-5">
-      <header className="flex gap-6 items-center mb-10">
+      <div className="flex gap-6 items-center mb-10">
+        <Headers name="Sobre mim" />
+        <Lordicon icon={avatar} size={38} />
+      </div>
+      {/* <header className="flex gap-6 items-center mb-10">
         <h1 className="text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,theme(colors.indigo.400),theme(colors.indigo.100),theme(colors.sky.400),theme(colors.fuchsia.400),theme(colors.sky.400),theme(colors.indigo.100),theme(colors.indigo.400))] bg-[length:200%_auto] animate-gradient">
           Sobre mim
         </h1>
 
         <Lordicon icon={avatar} />
-      </header>
+      </header> */}
 
       <div className="flex gap-20">
         <section className="">
@@ -31,7 +36,7 @@ export default function About() {
             className="shadow-person rounded-lg"
             src={Alvesimg}
             alt="imagem de Alves"
-            width={460}
+            width={360}
           />
         </section>
 

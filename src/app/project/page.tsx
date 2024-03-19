@@ -1,7 +1,9 @@
+import Headers from '@/components/Headers'
+
 export default function Project() {
   return (
-    <div>
-      <h1 className="flex flex-1 text-green-400">project</h1>
+    <div className="px-5">
+      <Headers name="Projetinhos" size={['6xl']} />
     </div>
   )
 }
